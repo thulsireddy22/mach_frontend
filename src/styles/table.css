@@ -1,0 +1,113 @@
+
+/* 
+
+.user-table{
+
+    background:white;
+    
+    table-layout: fixed;
+    
+    border-radius:15px;
+    padding:30px;
+    margin-left:2.5%;} */
+    
+
+
+.screen-title{font-size:20px;
+    text-transform:uppercase;
+    margin:8px;
+}
+
+.sme-table-head {
+  background-color: cadetblue;
+}
+
+
+
+
+/*   
+  .user-table {
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: collapse;
+  } 
+   */
+
+
+  
+  .table-header {
+    background-color: cadetblue; /* Set background color for table header */
+    color: white; /* Text color for table header */
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .table-rows-data td {
+    padding: 10px;
+   
+    border-bottom: 1px solid #ddd; /* Add bottom border for table rows */
+    white-space: nowrap; /* Prevent text wrapping in table cells */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis;
+  /* Show ellipsis (...) for overflow text */
+  }
+  
+
+  .sme-finder {
+    padding: 20px;
+  }
+  
+  .filter-toggle {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .table-container {
+    max-height: 200px; 
+    width: 100%; 
+    overflow: auto; 
+    margin-top: 40px;
+  }
+  .user-table {
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: collapse;
+}
+  
+  
+  .table-header {
+    background-color: cadetblue; 
+  }
+  
+  .table-row-data:hover {
+    background-color: lightgray;
+    
+  }
+  
+  .count-box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: 950px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  .screen-title {
+    margin-top: 0;
+  }
+
+  .table-rows-data{
+    margin-bottom: 10px;
+  }
+
+
+  

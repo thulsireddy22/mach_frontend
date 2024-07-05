@@ -1,0 +1,122 @@
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px; /* Adjust width as needed */
+  background: linear-gradient(to right, #7c5d89 0%, #b28cc3 50%, #cda0a6 100%);
+  color:white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  z-index: 999;
+  
+}
+
+.sidebar.visible {
+  transform: translateX(0);
+}
+
+
+.sidebar-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.sidebar-buttons button{background-color:#220047;
+color:white;
+font-weight:400;
+padding:10px;
+border:none;
+width:110px;
+border-radius:3px;
+margin:3px;
+}
+
+.sidebar-buttons button:hover{
+  background-color:#d85e6ccb;
+}
+.filter-togglebar {
+  position: fixed;
+  top: 45%;
+  left:0; 
+  cursor: pointer;
+  z-index: 1000;
+  background: none;
+  border:none;
+  color:black;
+  border-radius: 2px;
+  width:30px;
+  height:60px;
+  font-weight:800;
+}
+
+.selected-filters-wrapper-div{
+  display:block;
+  margin-top:30px;
+  text-decoration:underline;
+}
+.selected-filters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.selected-filter-item {
+  background:#3a9ea5;
+  border-radius: 4px;
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+  font-size:11px;
+  color:white;
+  
+}
+
+.filter-select-button{width:20px;
+margin:3px;
+font-weight:600;
+background:none;
+cursor:pointer;
+border:none;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.sidebar-filter-options{
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 4px;
+  color:white;
+  background:none;
+  border:none;
+  text-align:start;
+  cursor:pointer;
+  padding:5px;
+  transition:transform 0.3s ease;
+}
+
+.sidebar-filter-options:hover{
+  
+  background-color:#d85e6ccb;
+  color:white;
+  transform:translateX(10px);
+  border-radius:3px;
+ 
+}
+
+.sidebar-filter-options.selected{
+  background-color:#d85e6ccb;
+  color:white;
+}

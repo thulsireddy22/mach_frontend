@@ -1,0 +1,239 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  /* overflow: hidden; */
+}
+ 
+.replacement-finder {
+  height: 200vh;
+ 
+  background-image: linear-gradient(to right top, rgba(255, 172, 182, 0.603), rgba(226, 188, 192, 0.29), rgba(168, 205, 247, 0.612))
+}
+ 
+.tables {
+  display: flex;
+  gap: 10px;
+ 
+  justify-content: left;
+  height: calc(180vh - 80px); /* Adjust based on your header/footer height */
+ 
+}
+ 
+.user-skill {
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 5px;
+  position: relative;
+  height: calc(100vh - 140px);
+  overflow: auto;
+  margin-top: 20px;;
+}
+ 
+.scrollable {
+  overflow: auto;
+}
+ 
+.fixed-total {
+  display: flex;
+  flex: 1;
+ 
+  font-weight: 25px;
+  bottom: 0;
+  padding: 10px;
+  font-style: italic;
+  font-weight: 600;
+}
+ 
+ 
+ 
+.user-skill table {
+  border-radius: 5px;
+  overflow-y: auto;
+}
+ 
+.table-rowsdata td {
+  padding: 5px;
+  border-bottom: 1px solid purple;
+ 
+}
+ 
+.user-skill th {
+  width: 300px;
+  color: rgb(56, 1, 56);
+  font-family: 'Noto Sans', sans-serif;
+}
+ 
+.user-skill h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: rgb(96, 8, 96);
+}
+ 
+.replacement-card {
+  width: 190px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  border: 1px solid #ccc;
+  padding: 7px;
+  margin: 7px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(235, 187, 203, 0.441);
+  text-align: center;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: space-between;
+}
+ 
+.replacement-card:hover {
+  border: 1px solid #0b0a0a;
+  box-shadow: 0 2px 4px purple;
+}
+ 
+.replacement-finder h2 {
+  color: black;
+  margin-top: 5px;
+}
+ 
+.user-skill h2,
+.user-table h2 {
+  color: rgb(67, 6, 67);
+}
+ 
+.user-cards {
+  display: flex;
+  flex-direction: column;
+ 
+   /* Make the user-cards container scrollable */
+}
+ 
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust based on the number of columns you want */
+  row-gap: 3px;
+  column-gap: 3px;
+  height: calc(100vh - 110px); /* Adjust height to fit the screen */
+  overflow-y: auto; /* Make the cards container scrollable */
+  border-radius: 10px;
+  width:fit-content;
+  margin: 0%;
+  padding: 0;
+  margin-top: 15px;;
+}
+ 
+.service {
+  display: inline-block;
+  align-items: center;
+  color: white;
+  background-color: rgb(99, 67, 99);
+  border-radius: 10px;
+  padding: 3px 10px; /* Add padding for better appearance */
+  max-width: 100%; /* Ensure it doesn't exceed the container's width */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowed content */
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+ 
+.person-icon {
+  font-size: 3rem;
+  color: rgb(118, 31, 118);
+  margin-bottom: 8px;
+}
+ 
+.skill-rating-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+ 
+.skill-rating-box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  position: relative;
+}
+ 
+.skill-rating {
+  background-color: rgb(99, 67, 99);
+  border: 1px solid #193b5ad0;
+  border-radius: 4px;
+  padding: 5px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+}
+ 
+.label {
+  font-size: 0.8rem;
+  color: #0E2234;
+  margin-bottom: 3px;
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(240, 193, 201, 0.795);
+  border: 1px solid #193b5ad0;
+  border-radius: 4px;
+  padding: 2px 5px;
+  white-space: nowrap;
+}
+ 
+.skill-rating-box:hover .label {
+  display: block;
+}
+ 
+.account{
+  font-size: small;
+  font-family: 'Noto Sans', sans-serif;
+}
+.Name {
+  color: #0E2234;
+  font-size:1rem;
+  font-family: 'Noto Sans', sans-serif;
+}
+ 
+.paginationr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 10px; /* Add padding for better appearance */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Occupy full width */
+  z-index: 1000;
+   color: purple;
+}
+.paginationr button{
+  background-color: rgb(121, 1, 121);
+  border-radius: 3px;
+  color: white;
+  width: 70px;
+  height:25px;
+  border: 1px solid purple;
+  cursor: pointer;
+}
+.paginationr button:hover{
+  border:1px solid white;
+}
+@media (max-width: 668px) {
+  .user-skill {
+    width: 100%;
+    height: auto; /* Adjust height for smaller screens */
+  }
+ 
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust card size for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
+ 
+  .replacement-card {
+    width: 100%;
+    height: auto;
+  }
+}
